@@ -131,7 +131,7 @@ function App() {
                       "ThreeJs",
                       "Mui-Material",
                       "NextJS",
-                      "python",
+                      "Python",
                       "Deep Learning",
                       "Computer Vision",
                       "Photoshop",
@@ -225,7 +225,7 @@ interface Project {
 }
 const projects: Project[] = [
   {
-    name: { value: "Weblite", href: "https://weblite.me" },
+    name: { value: "Weblite - ReactJs", href: "https://weblite.me" },
     company: "Tosee Ertebatate Asre Rosha",
     desc: "A specialized platform for conducting educational courses on a messaging platform.",
   },
