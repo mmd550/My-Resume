@@ -229,36 +229,30 @@ const projects: Project[] = [
     company: "Tosee Ertebatate Asre Rosha",
     desc: "A specialized platform for conducting educational courses on a messaging platform.",
   },
-
-  {
-    name: "Fashion Style - Deep Learning",
-    company: "Arghavan",
-    desc: "virtual try-on clothes using Al and AR.",
-  },
   {
     name: "RoomInt - DeepLearning, AR with ThreeJs",
     company: "Arghavan",
-    desc: "indoor decoration using Al and AR.",
+    desc: "Indoor decoration using Al and AR.",
   },
   {
     name: "Labeling Software - OpenCV",
     company: "Arghavan",
-    desc: "a software for labeling images for computer vision based on opencv.",
+    desc: "A software for labeling images for computer vision based on opencv.",
   },
   {
     name: "Mohandes web app - VueJs",
     company: "LIFE team",
-    desc: "accounting and human resource management",
+    desc: "Accounting and human resource management",
   },
   {
-    name: "Ceremony web app - Reacts",
+    name: "Ceremony web app - ReactJs",
     company: "LIFE team",
     desc: "Managing ceremony and selling ceremony tickets.",
   },
   {
-    name: "Darsup web app - Reacts",
+    name: "Darsup web app - ReactJs",
     company: "Arghavan",
-    desc: "online education system based on open EDX",
+    desc: "Online education system based on open EDX",
   },
 ];
 const ProjectsResumeCardContent = ({ name, company, desc }: Project) => {
