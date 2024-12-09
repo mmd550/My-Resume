@@ -17,6 +17,28 @@ function App() {
         <Root>
           <Profile sx={{ mb: SPACING }} />
           <Grid2 container spacing={SPACING}>
+            <Grid2 size={{ xs: 12 }}>
+              <ResumeCard
+                radius={{
+                  topLeft: true,
+                  bottomRight: true,
+                }}
+                color={ResumeCardColor.LILAC}
+                title="Projects"
+              >
+                {projects.map((project) => (
+                  <ProjectsResumeCardContent
+                    {...project}
+                    key={
+                      typeof project.name === "string"
+                        ? project.name
+                        : project.name.value
+                    }
+                  />
+                ))}
+              </ResumeCard>
+            </Grid2>
+
             <Column>
               <ResumeCard
                 color={ResumeCardColor.CREAM}
@@ -141,28 +163,6 @@ function App() {
                 </ResumeCardItem>
               </ResumeCard>
             </Column>
-
-            <Grid2 size={{ xs: 12 }}>
-              <ResumeCard
-                radius={{
-                  topLeft: true,
-                  bottomRight: true,
-                }}
-                color={ResumeCardColor.LILAC}
-                title="Projects"
-              >
-                {projects.map((project) => (
-                  <ProjectsResumeCardContent
-                    {...project}
-                    key={
-                      typeof project.name === "string"
-                        ? project.name
-                        : project.name.value
-                    }
-                  />
-                ))}
-              </ResumeCard>
-            </Grid2>
           </Grid2>
         </Root>
       </ThemeProvider>
@@ -225,7 +225,7 @@ interface Project {
 }
 const projects: Project[] = [
   {
-    name: { value: "Weblite - ReactJs", href: "https://weblite.me" },
+    name: { value: "Weblite - ReactJs", href: "https://beta.weblite.me" },
     company: "Tosee Ertebatate Asre Rosha",
     desc: "A specialized platform for conducting educational courses on a messaging platform.",
   },
@@ -250,7 +250,7 @@ const projects: Project[] = [
     desc: "Managing ceremony and selling ceremony tickets.",
   },
   {
-    name: "Darsup web app - ReactJs",
+    name: { value: "Darsup web app - ReactJs", href: "https://darsup.org" },
     company: "Arghavan",
     desc: "Online education system based on open EDX",
   },
