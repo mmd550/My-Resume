@@ -70,7 +70,7 @@ function App() {
                 <ResumeCardItem>
                   <ExperienceItem>
                     <Typography component="pre">
-                      {"Jan, 2021- Sep, 2021 \n LIFE Team"}
+                      {"Jan, 2021 - Sep, 2021 \n LIFE Team"}
                     </Typography>
                     <ExperienceItemDesc>Front end developer</ExperienceItemDesc>
                   </ExperienceItem>
@@ -78,7 +78,7 @@ function App() {
                 <ResumeCardItem>
                   <ExperienceItem>
                     <Typography component="pre">
-                      {"Sep, 2021- July, 2023 \n Arghavan"}
+                      {"Sep, 2021 - July, 2023 \n Arghavan"}
                     </Typography>
                     <ExperienceItemDesc>Front end developer</ExperienceItemDesc>
                   </ExperienceItem>
@@ -86,7 +86,7 @@ function App() {
                 <ResumeCardItem>
                   <ExperienceItem>
                     <Typography component="pre">
-                      {"Sep, 2021- July, 2023 \n Arghavan"}
+                      {"Sep, 2021 - July, 2023 \n Arghavan"}
                     </Typography>
                     <ExperienceItemDesc>AI researcher</ExperienceItemDesc>
                   </ExperienceItem>
@@ -94,7 +94,7 @@ function App() {
                 <ResumeCardItem>
                   <ExperienceItem>
                     <Typography component="pre">
-                      {"Sep, 2021- July, 2023 \n Arghavan "}
+                      {"Sep, 2021 - July, 2023 \n Arghavan "}
                     </Typography>
                     <ExperienceItemDesc>
                       AR researcher and developer
