@@ -12,7 +12,7 @@ interface Props {
   children?: ReactNode;
   className?: string;
   sx?: SxProps;
-  radius: {
+  radius?: {
     topLeft?: boolean;
     topRight?: boolean;
     bottomRight?: boolean;
@@ -37,7 +37,7 @@ export function ResumeCard({
       sx={{
         backgroundColor: color,
         ...sx,
-        borderRadius: `${radius.topLeft ? borderRadius : 0}px ${radius.topRight ? borderRadius : 0}px ${radius.bottomRight ? borderRadius : 0}px ${radius.bottomLeft ? borderRadius : 0}px`,
+        borderRadius: `${radius?.topLeft ? borderRadius : 0}px ${radius?.topRight ? borderRadius : 0}px ${radius?.bottomRight ? borderRadius : 0}px ${radius?.bottomLeft ? borderRadius : 0}px`,
       }}
     >
       {title && (

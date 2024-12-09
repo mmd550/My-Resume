@@ -17,75 +17,9 @@ function App() {
         <Root>
           <Profile sx={{ mb: SPACING }} />
           <Grid2 container spacing={SPACING}>
-            <Grid2 size={{ xs: 12 }}>
-              <ResumeCard
-                radius={{
-                  topLeft: true,
-                  bottomRight: true,
-                }}
-                color={ResumeCardColor.LILAC}
-                title="Projects"
-              >
-                {projects.map((project) => (
-                  <ProjectsResumeCardContent
-                    {...project}
-                    key={
-                      typeof project.name === "string"
-                        ? project.name
-                        : project.name.value
-                    }
-                  />
-                ))}
-              </ResumeCard>
-            </Grid2>
-
             <Column>
               <ResumeCard
-                color={ResumeCardColor.CREAM}
                 radius={{ topLeft: true }}
-                title="Education"
-              >
-                <ResumeCardItem>
-                  <Typography>2017 - 2021</Typography>
-                  <Typography fontWeight="bold">
-                    Bachelor's Degree Mechanical Engineering
-                  </Typography>
-                  <Typography>Tehran University</Typography>
-                </ResumeCardItem>
-              </ResumeCard>
-              <ResumeCard
-                color={ResumeCardColor.LILAC}
-                radius={{ topRight: true }}
-                title="Contact"
-              >
-                <ResumeCardItem>
-                  <Typography fontWeight="bold">Phone</Typography>
-                  <Typography>+98 9196267890</Typography>
-                </ResumeCardItem>
-                <ResumeCardItem>
-                  <Typography fontWeight="bold">Email</Typography>
-                  <Typography>mmd77frvrdn@gmail.com</Typography>
-                </ResumeCardItem>
-                <ResumeCardItem>
-                  <Typography fontWeight="bold">Address</Typography>
-                  <Typography>Tehranpars, Tehran, Iran</Typography>
-                </ResumeCardItem>
-              </ResumeCard>
-              <ResumeCard
-                radius={{ bottomLeft: true }}
-                title="Language"
-                color={ResumeCardColor.LILAC}
-              >
-                <ResumeCardItem>
-                  <Typography>English</Typography>
-                  <Typography>Persian</Typography>
-                </ResumeCardItem>
-              </ResumeCard>
-            </Column>
-
-            <Column>
-              <ResumeCard
-                radius={{ topRight: true }}
                 title="Experience"
                 color={ResumeCardColor.LILAC}
               >
@@ -133,7 +67,7 @@ function App() {
                 </ResumeCardItem>
               </ResumeCard>
               <ResumeCard
-                radius={{ bottomRight: true, topLeft: true }}
+                radius={{ bottomLeft: true }}
                 sx={{ backgroundColor: "#fcede1" }}
                 title="Skills"
                 color={ResumeCardColor.CREAM}
@@ -163,6 +97,71 @@ function App() {
                 </ResumeCardItem>
               </ResumeCard>
             </Column>
+            <Column>
+              <ResumeCard
+                radius={{
+                  topRight: true,
+                  bottomRight: true,
+                }}
+                color={ResumeCardColor.LILAC}
+                title="Projects"
+              >
+                {projects.map((project) => (
+                  <ProjectsResumeCardContent
+                    {...project}
+                    key={
+                      typeof project.name === "string"
+                        ? project.name
+                        : project.name.value
+                    }
+                  />
+                ))}
+              </ResumeCard>
+            </Column>
+
+            <Grid2 container size={{ xs: 12 }} rowGap={SPACING}>
+              <ResumeCard
+                color={ResumeCardColor.CREAM}
+                radius={{ topLeft: true, topRight: true }}
+                title="Education"
+              >
+                <ResumeCardItem>
+                  <Typography>2017 - 2021</Typography>
+                  <Typography fontWeight="bold">
+                    Bachelor's Degree Mechanical Engineering
+                  </Typography>
+                  <Typography>Tehran University</Typography>
+                </ResumeCardItem>
+              </ResumeCard>
+              <ResumeCard
+                title="Language"
+                color={ResumeCardColor.LILAC}
+              >
+                <ResumeCardItem>
+                  <Typography>English</Typography>
+                  <Typography>Persian</Typography>
+                </ResumeCardItem>
+              </ResumeCard>
+
+              <ResumeCard
+                color={ResumeCardColor.LILAC}
+                radius={{ bottomRight: true, bottomLeft: true }}
+                title="Contact"
+              >
+                <ResumeCardItem>
+                  <Typography fontWeight="bold">Phone</Typography>
+                  <Typography>+98 9196267890</Typography>
+                </ResumeCardItem>
+                <ResumeCardItem>
+                  <Typography fontWeight="bold">Email</Typography>
+                  <Typography>mmd77frvrdn@gmail.com</Typography>
+                </ResumeCardItem>
+                <ResumeCardItem>
+                  <Typography fontWeight="bold">Address</Typography>
+                  <Typography>Tehranpars, Tehran, Iran</Typography>
+                </ResumeCardItem>
+              </ResumeCard>
+            </Grid2>
           </Grid2>
         </Root>
       </ThemeProvider>
