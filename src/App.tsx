@@ -94,11 +94,19 @@ function App() {
                 <ResumeCardItem>
                   <ExperienceItem>
                     <Typography component="pre">
-                      {"Sep, 2021- July, 2023 \n AR researcher and "}
+                      {"Sep, 2021- July, 2023 \n Arghavan "}
                     </Typography>
                     <ExperienceItemDesc>
                       AR researcher and developer
                     </ExperienceItemDesc>
+                  </ExperienceItem>
+                </ResumeCardItem>
+                <ResumeCardItem>
+                  <ExperienceItem>
+                    <Typography component="pre">
+                      {"July, 2023 - present \n Weblite"}
+                    </Typography>
+                    <ExperienceItemDesc>Front end developer</ExperienceItemDesc>
                   </ExperienceItem>
                 </ResumeCardItem>
               </ResumeCard>
