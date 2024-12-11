@@ -48,7 +48,7 @@ const ProfileImage = styled(ResumeCard)`
     max-width: 250px;
     margin-bottom: 0;
   }
-  background-image: url("./images/profile.png");
+  background-image: url("./images/profile-small.png");
   background-position: center;
   background-color: #fcede180;
   background-repeat: no-repeat;

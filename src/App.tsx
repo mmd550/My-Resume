@@ -19,7 +19,7 @@ function App() {
           <Grid2 container spacing={SPACING}>
             <Column>
               <ResumeCard
-                radius={{ topLeft: true }}
+                radius={{ topLeft: true, bottomRight: true }}
                 title="Experience"
                 color={ResumeCardColor.LILAC}
               >
@@ -67,7 +67,7 @@ function App() {
                 </ResumeCardItem>
               </ResumeCard>
               <ResumeCard
-                radius={{ bottomLeft: true }}
+                radius={{ bottomRight: true }}
                 sx={{ backgroundColor: "#fcede1" }}
                 title="Skills"
                 color={ResumeCardColor.CREAM}
@@ -101,7 +101,7 @@ function App() {
               <ResumeCard
                 radius={{
                   topRight: true,
-                  bottomRight: true,
+                  bottomLeft: true,
                 }}
                 color={ResumeCardColor.LILAC}
                 title="Projects"
@@ -122,7 +122,7 @@ function App() {
             <Grid2 container size={{ xs: 12 }} rowGap={SPACING}>
               <ResumeCard
                 color={ResumeCardColor.CREAM}
-                radius={{ topLeft: true, topRight: true }}
+                radius={{ topLeft: true }}
                 title="Education"
               >
                 <ResumeCardItem>
@@ -133,9 +133,11 @@ function App() {
                   <Typography>Tehran University</Typography>
                 </ResumeCardItem>
               </ResumeCard>
+
               <ResumeCard
                 title="Language"
                 color={ResumeCardColor.LILAC}
+                radius={{ bottomRight: true }}
               >
                 <ResumeCardItem>
                   <Typography>English</Typography>
@@ -145,7 +147,7 @@ function App() {
 
               <ResumeCard
                 color={ResumeCardColor.LILAC}
-                radius={{ bottomRight: true, bottomLeft: true }}
+                radius={{ bottomLeft: true }}
                 title="Contact"
               >
                 <ResumeCardItem>
