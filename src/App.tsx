@@ -237,6 +237,14 @@ const projects: Project[] = [
     desc: "Website for selling courses in cash or installments.",
   },
   {
+    name: {
+      value: "Weblite Landing - NextJs",
+      href: "https://landing.weblite.me/",
+    },
+    company: "Weblite",
+    desc: "Landing page for Weblite.",
+  },
+  {
     name: "RoomInt - DeepLearning, AR with ThreeJs",
     company: "Arghavan",
     desc: "Indoor decoration using Al and AR.",
