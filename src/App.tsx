@@ -87,9 +87,7 @@ function App() {
                       "ThreeJs",
                       "Mui-Material",
                       "NextJS",
-                      "Python",
-                      "Deep Learning",
-                      "Computer Vision",
+                      "TailwindCSS",
                       "Photoshop",
                       "CSS/SCSS",
                     ]}
@@ -231,6 +229,14 @@ const projects: Project[] = [
     desc: "A specialized platform for conducting educational courses on a messaging platform.",
   },
   {
+    name: {
+      value: "Rayan Class - NextJS",
+      href: "https://www.rayanclass.com/",
+    },
+    company: "Tosee Ertebatate Asre Rosha",
+    desc: "Website for selling courses in cash or installments.",
+  },
+  {
     name: "RoomInt - DeepLearning, AR with ThreeJs",
     company: "Arghavan",
     desc: "Indoor decoration using Al and AR.",
@@ -251,7 +257,7 @@ const projects: Project[] = [
     desc: "Managing ceremony and selling ceremony tickets.",
   },
   {
-    name: { value: "Darsup web app - ReactJs", href: "https://darsup.org" },
+    name: { value: "Darsup web app - NextJS", href: "https://darsup.org" },
     company: "Arghavan",
     desc: "Online education system based on open EDX",
   },
